@@ -79,3 +79,62 @@ Each module culminates in a deployable, documented project. By the end of the co
 
 ## 📦 Repo Layout (Suggested)
 
+```
+.
+├── month1/
+│   └── backend-api/
+│       ├── api/          # FastAPI/Node.js application code
+│       ├── database/     # PostgreSQL configuration and migrations
+│       ├── cache/        # Redis setup and caching logic
+│       └── nginx/        # Nginx/Traefik configuration files
+│
+├── month2/
+│   └── devops-cicd/
+│       ├── terraform/    # Infrastructure as Code (IaC) configurations
+│       ├── github-actions/ # CI/CD pipeline definitions
+│       └── monitoring/   # Grafana, Prometheus, and Loki setup
+│
+├── month3/
+│   └── ai-infrastructure/
+│       ├── llm-server/   # Ollama/vLLM model serving setup
+│       ├── vector-db/    # Weaviate/Chroma vector database
+│       └── document-processing/ # Document handling and processing
+│
+└── month4/
+    └── big-data/
+        ├── kafka-pipeline/    # Kafka/Redpanda streaming setup
+        ├── spark-processing/  # Apache Spark/DuckDB processing
+        └── analytics/        # Data analysis and visualization
+```
+
+### 📁 Folder Structure Explanation
+
+The repository is organized into four main directories, each corresponding to a month of the course:
+
+1. **Month 1 - Backend & Docker (`month1/`)**
+   - Focuses on building a production-ready backend API
+   - Separates concerns between API logic, database, caching, and web server
+   - Enables easy containerization and service orchestration
+
+2. **Month 2 - DevOps & Infrastructure (`month2/`)**
+   - Houses infrastructure code and deployment configurations
+   - Separates IaC, CI/CD, and monitoring concerns
+   - Makes it easy to manage different environments (dev, staging, prod)
+
+3. **Month 3 - AI Infrastructure (`month3/`)**
+   - Organizes AI/ML components into distinct services
+   - Separates model serving, vector storage, and document processing
+   - Enables modular development of AI features
+
+4. **Month 4 - Big Data (`month4/`)**
+   - Structures data pipeline components
+   - Separates streaming, batch processing, and analytics
+   - Facilitates building end-to-end data solutions
+
+This structure promotes:
+- Clear separation of concerns
+- Modular development
+- Easy navigation between different components
+- Scalable project organization
+- Clear progression through the course material
+
